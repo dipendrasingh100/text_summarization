@@ -1,1 +1,1 @@
-## Text Summarization app using streamlit & HuggingFace Pipeline.
+## Text Summarization app using streamlit & HuggingFace🤗 Pipeline.
