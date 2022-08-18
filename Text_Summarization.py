@@ -34,31 +34,9 @@ else:
 if (uploaded_file is None) and (txt == ""):
     pass
 else:
-<<<<<<< HEAD
     t1 = time.time()
     short_summary = summarize(txt,ratio=.2)
     t2 = time.time()
-=======
-    mthd = st.selectbox("How do you want to summarize text?",options=["<Choose an Option>","By ratio","By word_count"])
-        
-    if mthd != "<Choose an Option>":
-        if mthd == "By ratio":
-            ratio = st.number_input("**ratio** - It represents the proportion of the summary compared to the original text.",min_value=0.1,max_value=1.0,value=0.2,step=.05)
-            t1 = time.time()
-            short_summary = summarize(txt,ratio=ratio)
-            t2 = time.time()
-            val = "ratio"
-        else:
-            wc = st.number_input("**word_count** - It decides the no of words in the summary.",value=30,min_value=1)
-            t1 = time.time()
-            short_summary = summarize(txt,word_count=wc)
-            t2 = time.time()
-            val = "word_count"
-
->>>>>>> eabe227d2dcc61f1686fa8c5d7735de9dd98ab12
-        # st.write(f'''### Original Text''')
-    h = len(txt.split(". "))
-
     if uploaded_file is not None :
         st.text_area("Original Text",value=txt,height=300)
     
